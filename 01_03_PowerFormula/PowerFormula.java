@@ -1,5 +1,3 @@
-import java.math.BigDecimal;
-
 public class PowerFormula {
   public static void main(String[] args) {
     byte force = 125;

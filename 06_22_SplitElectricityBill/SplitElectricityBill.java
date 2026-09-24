@@ -1,29 +1,30 @@
-import static java.lang.System.*;
 import java.util.Scanner;
 
 public class SplitElectricityBill {
 
   public static void main(String[] args) {
-    Scanner inputPeople = new Scanner(System.in);
+    // Input
+    Scanner input = new Scanner(System.in);
     System.out.println("Number of people:");
-    byte people = inputPeople.nextByte();
+    byte people = input.nextByte();
 
-    Scanner inputElectricityConsumption = new Scanner(System.in);
+    //Scanner inputElectricityConsumption = new Scanner(System.in);
     System.out.println("Enter electricity consumption (kWh):");
-    double electricityConsumption = inputElectricityConsumption.nextDouble();
+    double electricityConsumption = input.nextDouble();
 
-    Scanner inputPrice = new Scanner(System.in);
+    //Scanner inputPrice = new Scanner(System.in);
     System.out.println("Enter price per kWh (€):");
-    double price = inputPrice.nextDouble();
+    double price = input.nextDouble();
 
-    Scanner inputFixedMonthlyCharge = new Scanner(System.in);
+    //Scanner inputFixedMonthlyCharge = new Scanner(System.in);
     System.out.println("Enter fixed monthly charge (€):");
-    double fixedMonthlyCharge = inputFixedMonthlyCharge.nextDouble();
+    double fixedMonthlyCharge = input.nextDouble();
 
-    Scanner inputTax = new Scanner(System.in);
+    //Scanner inputTax = new Scanner(System.in);
     System.out.println("Enter tax (%):");
-    double tax = inputTax.nextDouble();
+    double tax = input.nextDouble();
 
+    // Output
     double energyCost = electricityConsumption * price;
     System.out
       .println("Energy cost = " + String.format("%.2f", energyCost) + " €");

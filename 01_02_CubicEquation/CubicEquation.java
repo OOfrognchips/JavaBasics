@@ -1,6 +1,3 @@
-import static java.lang.Math.*;
-import static java.lang.System.*;
-
 public class CubicEquation {
 
   static int formula(int value) {
