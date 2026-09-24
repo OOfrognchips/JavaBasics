@@ -24,6 +24,8 @@ public class SplitElectricityBill {
     System.out.println("Enter tax (%):");
     double tax = input.nextDouble();
 
+    input.close();
+
     // Output
     double energyCost = electricityConsumption * price;
     System.out
