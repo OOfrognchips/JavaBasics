@@ -1,0 +1,16 @@
+public class PrintFormat {
+
+  public static void main(String[] args) {
+    String name = "Alice";
+    byte age = 25;
+    float height = (float)1.82678;
+    float grade = (float)8.756;
+    String subject = "Mathematics";
+
+    System.out.printf("Name: %s%n", name);
+    System.out.printf("Age: %d years old%n", age);
+    System.out.printf("Height: %.2f meters%n", height);
+    System.out.printf("Grade in %S: %.1f%n", subject, grade);
+  }
+
+}
