@@ -26,7 +26,7 @@ public class FilmDuration {
         } else {
           // In case of misuse of the method (probably will never happen though since it is only used internally)
           throw new IllegalArgumentException(
-            "Invalid value used in 'type' parameter of the 'numericInputHelper' method.");
+            "Invalid value used in the 'type' parameter of the 'numericInputHelper' method.");
         }
       } catch (NumberFormatException exception) {
         System.err.println("Please input a valid number!");
