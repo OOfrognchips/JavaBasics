@@ -2,43 +2,40 @@ import java.util.Scanner;
 
 public class CountNumber2 {
 
+    public static void main(String[] args) {
 
-	public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
+        byte number1;
+        while (true) {
 
-		Scanner input = new Scanner(System.in);
+            System.out.println("Enter number > 0:");
+            number1 = input.nextByte();
 
-		byte number1;
-		while (true) {
+            if (number1 > 0) {
+                break;
+            } else if (number1 <= 0) {
+                continue;
+            }
+        }
 
-			System.out.println("Enter number > 0:");
-			number1 = input.nextByte();
+        byte i = 0;
+        byte count = 0;
 
-			if (number1 > 0) {
-				break;
-			} else if (number1 <= 0) {
-				continue;
-			}
-		}
+        while (i < 10) {
+            System.out.println("Enter number:");
+            byte number2 = input.nextByte();
+            i++;
 
-		byte i = 0;
-		byte count = 0;
+            if (number2 == number1) {
+                count += 1;
+            } else if (number2 != number1) {
+                continue;
+            }
+        }
 
-		while (i < 10) {
-			System.out.println("Enter number:");
-			byte number2 = input.nextByte();
-			i++;
+        input.close();
 
-			if (number2 == number1) {
-				count += 1;
-			} else if (number2 != number1) {
-				continue;
-			}
-		}
-
-
-		input.close();
-
-		System.out.printf("Count: %d%n", count);
-}
+        System.out.printf("Count: %d%n", count);
+    }
 }

@@ -2,25 +2,23 @@ import java.util.Scanner;
 
 public class ShowNumbers {
 
+    public static void main(String[] args) {
 
+        Scanner input = new Scanner(System.in);
 
-	public static void main(String[] args) {
+        System.out.println("Enter X:");
+        byte x = input.nextByte();
 
-		Scanner input = new Scanner(System.in);
+        System.out.println("Enter Y:");
+        byte y = input.nextByte();
 
-		System.out.println("Enter X:");
-		byte x = input.nextByte();
+        input.close();
 
-		System.out.println("Enter Y:");
-		byte y = input.nextByte();
+        while (x <= y) {
+            // System.out.print(x + " ");
+            System.out.printf("%d ", x);
+            x++;
+        }
 
-		input.close();
-
-		while (x <= y) {
-			// System.out.print(x + " ");
-			System.out.printf("%d ", x);
-			x++;
-}
-
-}
+    }
 }
