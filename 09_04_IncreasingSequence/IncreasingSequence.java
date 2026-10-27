@@ -10,7 +10,6 @@ public class IncreasingSequence {
         String output = "";
 
         while (true) {
-
             System.out.println("Enter number:");
             int number = input.nextInt();
 
