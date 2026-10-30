@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PodiumAlternative {
+public class PodiumFixed {
 
     public static void main(String[] args) {
 
