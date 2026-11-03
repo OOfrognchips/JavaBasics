@@ -11,12 +11,30 @@ public class afinantlarpa {
         // String[] parts = harp.split("(?<=[+-].{1})");
 
         // Regular expression to split between a number and an alphabetic character
-        String[] parts = harp.split("(?<=\\d)(?=[A-Z])");
+        // String[] parts = harp.split("(?<=\\d)(?=[A-Z])");
 
-        for (byte i = 0; i < parts.length; i++) {
-            if (parts[i].contains("+")) {
+        // String[] contents = harp.toCharArray();
+        String[] contents = harp.split("+");
+        char[] charArray = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+            'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T' };
+
+        for (byte i = 0; i <= contents.length; i++) {
+            System.out.println(contents[i]);
+            /*
+            	  for (char validCharacter : charArray) {
+            
+            		if (i == validCharacter) {
+            			System.out.println(i);
+            		} else if (i != validCharacter) {
+            			continue;
+            		}
+            	}
+            */
+        }
+        /*
+            if (contents[i].contains("+")) {
                 byte delimiterIndex = (byte)(parts[i].lastIndexOf("+"));
-
+        
                 // for (byte n = 0; n < 10; n++) {
                 // byte timesValue = (byte)(Character.getNumericValue(parts[i].charAt(delimiterIndex + 1)));
                 // System.out.println(delimiterIndex);
@@ -28,9 +46,9 @@ public class afinantlarpa {
                     parts[i].substring(0, parts[i].indexOf("+")), timesValue);
                 // }
                 // }
-            } else if (parts[i].contains("-")) {
+            } else if (contents[i].contains("-")) {
                 byte delimiterIndex = (byte)(parts[i].lastIndexOf("-"));
-
+        
                 // for (byte n = 0; n < 10; n++) {
                 // byte timesValue = (byte)(Character.getNumericValue(parts[i].charAt(delimiterIndex + 1)));
                 short timesValue =
@@ -41,6 +59,6 @@ public class afinantlarpa {
                 // }
                 // }
             }
-        }
+        }*/
     }
 }
